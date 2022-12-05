@@ -5,8 +5,7 @@ Final Project for CSC212
  &nbsp; Alyssa Krouson <br />
  &nbsp; Jake Javier <br />
  &nbsp; Ebrahima Diallo <br />
- 
-
+  
 
 ## Code Completed
  ```
