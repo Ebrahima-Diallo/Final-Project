@@ -147,3 +147,7 @@ Index being index in which youre adding or editing the value. For example in an 
 The final number is the value at that index.<br />
 So the terminal call "1 1 3" means that at the index of 1 the number that occupies that space is 3.<br />
 You can then edit that number by changing the final value. So "1 1 0" would change the 3 to a 0 at i = 1.
+
+This program allows you to also find the sum of either the whole array or even segmented.
+This terminal call is initated by a '2' and then indexed by start finish with the next two numbers. So to add values from the index range 0-2 you would type "2 0 2" into the terminal.<br />
+
