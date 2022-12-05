@@ -139,4 +139,11 @@ void ReadFile(std::string file_name, std::vector<std::vector<int>> * image_data)
  
  ```
 
-
+## How to Run 
+To construct the array you start by entering a number 'N'. <br />
+To begin adding values you will follow the notion "1 Index Value" <br />
+1 letting the terminal know you are attempting to add / edit in the array <br />
+Index being index in which youre adding or editing the value. For example in an array with a length of 3 (N = 3) to then add a value at index 1 you would type "1 1 Value"<br />
+The final number is the value at that index.<br />
+So the terminal call "1 1 3" means that at the index of 1 the number that occupies that space is 3.<br />
+You can then edit that number by changing the final value. So "1 1 0" would change the 3 to a 0 at i = 1.
