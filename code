@@ -1,14 +1,4 @@
-# Final-Project
-Final Project for CSC212
-# Group Members:  <br />
- &nbsp; Juliana Nguyen <br />
- &nbsp; Alyssa Krouson <br />
- &nbsp; Jake Javier <br />
- &nbsp; Ebrahima Diallo <br />
- 
 
-
-## Code Completed
  ```
 #include <iostream>
 #include <cmath>
