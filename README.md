@@ -14,6 +14,7 @@ Final Project for CSC212
 #include <vector>
 
 void ReadFile(std::string file_name, int * array);
+void WriteFile(std::string file_name, int * array);
 
 //int n;
 
@@ -102,6 +103,8 @@ int main(int argc, char * argv[]){
            // std::cout << a;
         }
     }
+
+    WriteFile(out_fname, &seg);
 }
 
 void ReadFile(std::string file_name, std::vector<std::vector<int>> * image_data) {
@@ -133,6 +136,21 @@ void ReadFile(std::string file_name, std::vector<std::vector<int>> * image_data)
 		// The line is empty, push our completed row into our 2D vector
 		(*image_data).push_back(new_row);
 		new_row.clear();
+	}
+}
+
+void WriteFile(std::string file_name, std::vector<std::vector<double>>* image_data) {
+	// Open our file with write permissions
+	std::ofstream output_file(file_name);
+
+	//go through each pixel
+	for (unsigned int i = 0; i < image_data->size(); i++) {
+		for (unsigned int j = 0; j < (*image_data)[i].size(); j++) {
+			// Output each value and a space
+			output_file << (*image_data)[i][j] << " ";
+		}
+		// Output a newline character after every row
+		output_file << '\n';
 	}
 }
  
