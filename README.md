@@ -12,14 +12,25 @@ Final Project for CSC212
 #include <iostream>
 #include <cmath>
 #include <vector>
+#include <fstream>
+#include <sstream>
+#include <string>
 
 void ReadFile(std::string file_name, int * array);
 void WriteFile(std::string file_name, int * array);
 
-//int n;
 
-//array
-//int seg[400000];
+class Tree{
+    public:
+    int seg[400000];
+};
+
+
+// //length
+int n;
+
+// //array
+int seg[400000];
 
 //curr is to keep track of which node were at
 //start and end is to keep track what range we're on
@@ -74,12 +85,12 @@ int sum(int ql, int qr){
 //seg tree size
 int main(int argc, char * argv[]){
 
-    std::string fname = argv[1];
-    std::string size = argv[2];
-    int n = stoi(size);
 
-    int seg[400000];
-    ReadFile(fname, &seg);
+    //int n;
+    std::string fname = argv[1];
+    std::string outfname = argv[2];
+
+    //ReadFile(fname, &seg[400000]);
 
 
     while(true){
@@ -103,9 +114,9 @@ int main(int argc, char * argv[]){
            // std::cout << a;
         }
     }
-
-    WriteFile(out_fname, &seg);
+    WriteFile(outfname, &seg[400000]);
 }
+
 
 void ReadFile(std::string file_name, std::vector<std::vector<int>> * image_data) {
 
