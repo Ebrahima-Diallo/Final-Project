@@ -5,6 +5,7 @@
 #include <vector>
 
 void ReadFile(std::string file_name, int * array);
+void WriteFile(std::string file_name, int * array);
 
 //int n;
 
